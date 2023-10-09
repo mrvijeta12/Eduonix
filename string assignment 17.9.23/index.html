@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+
+    <script>
+
+ // 1.  Reverse a string without using the reverse method or a function.
+
+        /* 
+    
+            let str = prompt("Enter Here");
+            let reverse = " ";
+            if (str != 0){
+                for (let i=str.length-1;i>=0;i--){
+                     reverse = str[i];
+                     console.log(reverse);
+                }
+            }else{
+                console.log(`Empty String`); 
+            }
+    
+        */
+
+ //  2. Return all  vowels in a string without using functions.
+        /*
+        
+            let str = "my name is vijeta soni";
+            let vowel = [ ];
+            str = str.toLowerCase();
+            for (let i=0;i<str.length;i++){
+                let currentchar = str[i];
+                if(/[aeiou]/.test(currentchar) ){
+                    vowel =(currentchar);
+                    console.log(vowel +",");
+                }
+            }
+
+        */
+        
+        
+// 3. Count the number of vowels in a string without using functions.
+
+        /* 
+        
+            let str = "my nAme s vjetauio";
+            let vowel = 0;
+            str = str.toLowerCase();
+            for (let i=0;i<str.length;i++){
+                let currentchar = str[i];
+                if(/[aeiou]/.test(currentchar) ){
+                    vowel++;
+                }
+            }
+            console.log(vowel);
+        
+        */
+
+ // 4. Check if a string is a palindrome without using functions. (VVI)
+
+        /*
+                let str = prompt("Enter Here");
+                let len = str.length;
+                str = str.toLowerCase();
+                let msg = "It is a Palindrome";
+        
+                if (str.length != 0) {
+                    for (let i = 0; i < len / 2; i++) {
+                        if (str[i] != str[len - 1 - i])
+                            msg = "It is not a Palindrome";
+                    }
+                    console.log(`${str}: ${msg}`);
+                } else {
+                    console.log("Empty String");
+                }
+        
+        */
+
+
+// 5. Remove all spaces from a string without using functions.
+
+        /*        
+        let str = "my name is vijeta";
+        let strwithoutSpace = " ";
+        if (str.length != 0) {
+
+            for (let i = 0; i < str.length; i++) {
+                if (str[i] !== " ") {
+                    strwithoutSpace += str[i];
+                }
+
+            }
+            console.log(strwithoutSpace);
+        }else{
+            console.log("Empty String");
+        }
+
+        */
+
+
+// 6. Find the longest word in a sentence without using functions.
+
+        /*
+
+           let str = "this is vijeta varma from Maharsatra";
+           let strSplit = str.split(" ");
+           let longestLength = 0;
+           let longestWord = " ";
+   
+           for (let i = 0; i < strSplit.length; i++) {
+               if (strSplit[i].length > longestLength) {
+                   longestLength = strSplit[i].length
+                   longestWord = strSplit[i];
+               }
+           }
+           console.log(longestLength + "<br>");
+           console.log(longestWord);
+   
+        */
+
+// 7. Check if two strings are anagrams of each other without using functions.
+
+        /*
+   
+        function checkAnagram(str1, str2) {
+            let counter = {};
+            if (str1.length !== str2.length) {
+                return "Not Anagram(Length does not match)";
+            }
+            for (let letters of str1) {
+                // console.log(letters)
+                counter[letters] = (counter[letters] || 0) + 1;
+            }
+            // console.log(counter);
+
+            for (let items of str2) {
+                if (!counter[items]){
+                    return "Not Anagram";
+                }
+                counter[items]--
+            }
+            return "Anagram";
+        }
+     
+        console.log(checkAnagram("hello", "llohe"))
+
+        */
+
+// 8. Capitalize the first letter of each word in a sentence without using functions.
+
+        /*
+
+        function capitlized(sentence) {
+            let str = sentence.split(" ");
+            for (let i = 0; i < str.length; i++) {
+                str[i] = str[i][0].toUpperCase() + str[i].substring(1);
+
+            }
+            return str.join(" ");
+        }
+        console.log(capitlized(prompt("Enter Here")));
+
+        */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    color: black;
+
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    /* border: 2px solid black; */
+  
+}
+
+header {
+    width: 100%;
+    padding: 0px 15px 0px 20px;
+    /* border: 4px solid red; */
+    display: flex;
+    /* margin: 0px auto; */
+    /* height: 70px; */
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    background-color: white;
+}
+
+.logo {
+    width: 150px;
+    height: 100%;
+    /* border: 2px solid black; */
+    /* background-color: red; */
+    background-blend-mode: overlay;
+    padding: 8px;
+}
+
+.logo img {
+    width: 100%;
+    /* border: 2px solid red; */
+    /* background-color: black; */
+    height: 100%;
+    font-size: 32px;
+    mix-blend-mode: multiply;
+}
+
+.delivery_time {
+    width: 15%;
+    border: green;
+
+}
+
+.search_box {
+    width: 40%;
+    border: 2px solid rgb(185, 195, 147);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: rgb(234, 234, 234);
+
+}
+
+.search_box img {
+    width: 20px;
+    height: 20px;
+}
+
+.search_bar {
+
+    background-color: rgb(234, 234, 234);
+    width: 100%;
+    padding: 4px ;
+    border: none;
+    outline: none;
+
+}
+
+.my_cart {
+    display: flex;
+    align-items: center;
+    background-color: rgb(42, 139, 42);
+    padding: 6px 4px;
+    border-radius: 4px;
+    color: white;
+    gap: 5px;
+
+}
+
+.my_cart img {
+    width: 20px;
+    height: 20px;
+}
+
+@media  screen and  (max-width:800px){
+header{
+    padding: 0px;
+}
+
+.logo{
+width: 100px;
+}
+}
+
+@media  screen and  (max-width:600px){
+    .logo{
+       width: 80px;
+    }
+    .search_box{
+        width: 20%;
+    }
+    header{
+        font-size: 12px;
+    }
+
+
+}
+
+/* OVERVIEW SECTION  */
+
+.overview {
+    width: 90%;
+    /* border: 2px solid red; */
+    margin: 10px auto 30px;
+}
+
+/* PAAN SECTION  */
+
+.paan-cornor {
+    width: 100%;
+    height: 160px;
+    /* border: 2px solid red; */
+    margin-bottom: 20px;
+}
+
+.paan-cornor img {
+    width: 100%;
+    height: 100%;
+    
+}
+.paan-cornor img:hover{
+    
+    box-shadow: 0.5px 0.5px 5px 0.5px grey;
+}
+
+/* PRODUCT VARIETIES CARDS SECTION */
+
+.product_varieties_cards {
+    width: 100%;
+    height: 180px;
+    /* border: 4px solid black; */
+    display: flex;
+    overflow: auto;
+    gap: 15px;
+    transition: 2s;
+    /* transition-property: all; */
+
+}
+
+.product_varieties_cards img {
+    height: 90%;
+    width: 250px;
+   
+    /* border: 2px solid red; */
+    /* margin-right: 15px; */
+}
+.product_varieties_cards img:hover,.paan-cornor:hover,.card img:hover,.bread_cards:hover{
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+.product_varieties_cards::-webkit-scrollbar,.bread_egg_cards::-webkit-scrollbar{
+    width: 10px;
+}
+.product_varieties_cards::-webkit-scrollbar-thumb,.bread_egg_cards::-webkit-scrollbar-thumb{
+    background-color: rgb(248, 113, 113);
+    border-radius: 10px;
+}
+.product_varieties_cards::-webkit-scrollbar-track,.bread_egg_cards::-webkit-scrollbar-track{
+    background-color: rgb(214, 212, 212);
+    /* width: 5px; */
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+
+/* FOOD CARDS SECTION */
+
+.card {
+    width: 100%;
+    /* border: 4px solid rgb(7, 29, 225); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-bottom: 25px;
+    gap: 10px;
+    margin-top: 25px ;
+   
+}
+
+.card img {
+    width: 100px;
+    height: 120px;
+    /* border: 2px solid black; */
+
+}
+
+@media screen and (max-width:415px){
+    .card img{
+        width: 130px;
+    height: 170px;
+
+    }
+}
+@media screen and (max-width:352px){
+    .card img{
+        width: 220px;
+    height: 190px;
+
+    }
+}
+
+
+
+/* BREAD AND EGG SECTION  */
+
+.bread_egg_container {
+    width: 100%;
+    /* border: 4px solid rgb(11, 240, 133); */
+
+}
+
+.bread_egg_container .heading {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    /* border: 2px solid black; */
+}
+
+.bread_egg_cards {
+    display: flex;
+    width: 100%;
+    overflow: auto;
+    gap: 15px;
+    /* border: 2px solid red; */
+    padding: 20px;
+}
+
+.bread_cards {
+    padding:  10px;
+    border: 2px solid rgb(193, 191, 191);
+    width: 150px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+
+}
+
+.card_image {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_products_details {
+    /* border: 2px solid black; */
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.card_products_details .weight {
+    font-size: 14px;
+}
+
+.bread_cards img {
+    height: 95px;
+    width: 100px;
+}
+
+.select {
+    display: flex;
+
+    gap: 10px;
+}
+
+.amount {
+    display: flex;
+    flex-direction: column;
+}
+
+.amount img {
+    width: 15px;
+    height: 15px;
+
+}
+
+.add {
+    width: 90px;
+    /* border: 2px solid black; */
+}
+
+.btn {
+    background-color: white;
+    width: 100%;
+    border-radius: 6px;
+    height: 100%;
+    border: 2px solid rgb(161, 241, 161);
+}
+
+/* FOOTER SECTION  */
+
+footer {
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px;
+}
+
+.paan-cornor img:hover{
+}

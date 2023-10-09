@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Searching,Map And Set</title>
+    <script>
+
+      // 1. LINEAR AND BINARY SEARCH
+
+        /*
+
+        let arr = [2, 5, 4, 6, 9, 8, 7, 1, 3];
+        let key = 3;
+        let count = 0;
+        if (arr.length !== 0) {
+
+            for (let i = 0; i < arr.length; i++) {
+                count++ 
+                if (arr[i] === key) {
+                    key = i;
+                }
+              
+            }
+            console.log( ` count: ${count} Element is found at index: ${key}`);
+        }else{
+            console.log("Empty Array");
+        }
+
+        */
+
+        // BINARY SEARCH
+
+        /*
+
+            let data = [10,20,30,40,50,60,70,80,90,100,110,120,130];
+            let start = 0;
+            let end = data.length-1;
+            let find = 120;
+            let position = -1;
+            let count = 0;
+
+            while(start<=end){
+                count++
+                let mid = Math.floor((start+end)/2);
+                // console.log(mid);
+                // break;
+                if(data[mid] === find){
+                    position = mid;
+             
+                 
+                    break;
+                }else if(data[mid]<find){
+                    start = mid+1;
+                }else{
+                    end = mid-1;
+                }
+            }
+
+            if(position != -1){
+                console.log(` Count: ${count} and Element is found at:${position}`)
+            }else{
+                console.log(`Element is not in this array`);
+            }
+
+         */
+
+
+     //  2. Create a JavaScript program that uses a Map to store the names of five countries as keys and their corresponding capitals as values. Print out the names of all the countries and their capitals stored in the Map.
+
+        /*
+
+         let data = new Map([
+
+         ['India' , 'New Delhi'],
+         ['USA' , 'Wasington DC'],
+         ['Russia' , 'Moscow'],
+         ['france' , 'Paris'],
+         ['Australia' , 'Canberra']
+
+         ])
+
+         console.log(data);
+
+         */
+
+
+        // 3.  Write a JavaScript program that takes an array of numbers as input and uses a Set to remove duplicates from the array. After removing duplicates, print the elements of the Set.
+
+        /* 
+
+        let arr = [1, 2, 4, 5, 1, 6, 3, 8,  9, 7, 5, 4, 2, 1, 6, 9, 8];
+        let unique = new Set(arr);
+        console.log(unique);
+
+        */
+
+        // 4. Write a JavaScript program that uses a Map to store the names of fruits as keys and their corresponding colors as values. Write a loop to iterate through the Map and print out each fruit's name and color.
+
+        /*
+
+        let data = new Map([
+            ['Apple','Red'],
+            ['Grapes','Green'],
+            ['Banana','Yellow'],
+        ])
+
+        for (x of data){
+            console.log(x);
+        }
+
+        */
+
+
+        // 5.  Create a JavaScript program that demonstrates the use of the Set's size property and clear() method. Create a Set of integers, add some elements to it, print its size, and then clear the Set. Print its size again to confirm that it's empty.
+
+        /*
+
+        let arr = [10,20,30,40,50,60,70,80,90,100];
+        let result = new Set(arr);
+
+        // BEFORE CLEAR 
+        console.log(result.size);
+
+        // AFTER CLEAR 
+        result.clear();
+       console.log(result.size);
+
+       */
+
+      
+
+       // 6. Create a JavaScript program that uses a Set to store the names of five programming languages. Implement a function that checks if a given programming language name exists in the Set and returns a boolean value.
+
+        /*
+
+        let data = new Set(["JavaScript", "Python", "HTML", "React", "CSS"]);
+        let search = data.has("Python");
+        console.log(search);
+
+        */
+
+       //  7. Write a JavaScript program that uses a Map to store the names of countries as keys and their official languages as values. Print out the keys and values of the Map separately.
+
+        /*
+
+        let data = new Map([
+
+            ['India', 'New Delhi'],
+            ['USA', 'Wasington DC'],
+            ['Russia', 'Moscow'],
+            ['france', 'Paris'],
+            ['Australia', 'Canberra']
+
+        ])
+
+        console.log(data.keys());
+        console.log(data.values());
+
+     */
+
+    // 8.  Create a JavaScript program that uses a Set to store the names of colors. Implement a function to remove a specific color from the Set and print the updated set of colors.
+
+    /*
+
+    let str = ["red","blur","yellow","orange"];
+    let data = new Set(str);
+    console.log(data)
+
+    let remove = data.delete("red");
+    console.log(data)
+
+    */
+
+  /* 9. Implement a JavaScript program that demonstrates the following operations on a Map:
+
+  Add three key-value pairs to the Map.
+  Print the keys and values in the Map.
+  Check if a specific key exists in the Map.
+  Remove one key-value pair from the Map.  */
+
+
+  let data = new Map([
+
+['India', 'New Delhi'],
+['USA', 'Wasington DC'],
+['Russia', 'Moscow'],
+
+
+])
+
+console.log(data);
+
+let search = data.has("India");
+console.log(search);
+
+let remove = data.delete("India");
+console.log(data)
+
+// data.set('Israel','Jerusalem');
+
+// console.log(data)
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

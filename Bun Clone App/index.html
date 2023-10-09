@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bun Clone App</title>
+    <script src="https://kit.fontawesome.com/cdf9a174a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- version  -->
+
+    <div class="version">
+        <p>Bun 1.0 is here! Read the announcement</p>
+        <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+    </div>
+
+    <!-- navbar -->
+    <nav>
+        <ul class="logo">
+            <div class="bun-image">
+                <img src="./public/bun logo.png" alt="">
+                <a href="">Bun</a>
+            </div>
+            <div class="links">
+                <li><a href="">Docs</a></li>
+                <li><a href="">Guides</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href=""><i class="fa-brands fa-discord"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- header  -->
+
+    <header class="header">
+        <div class="header-intro">
+            <h1>Bun is a fast JavaScript runtime package manager bundler test runner all-in-one toolkit</h1>
+            <p>Develop, test, run, and bundle JavaScript & TypeScript projects—all with Bun. Bun is an all-in-one
+                JavaScript runtime & toolkit designed for speed, complete with a bundler, test runner, and
+                Node.js-compatible package manager.</p>
+            <h3>Install Bun v1.0.0</h3>
+
+            <div class="source-code">
+                <div class="dollar">
+                    <span><i class="fa-regular fa-dollar-sign "></i></span>
+                    <span class="code">curl -fsSL https://bun.sh/install | bash</span>
+
+                </div>
+                <div class="copy">
+
+                    <span><i class="fa-regular fa-copy"></i></span>
+                </div>
+            </div>
+
+            <div class="support">
+                <div class="operating-system">
+                    <span>
+                        Supported on macOS, Linux, and WSL
+                    </span>
+                </div>
+
+                <div class="view-source">
+                    <span>
+                        View source
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="header-graph">
+
+            <div class="nav">
+                <div class="navitems nav1">
+                    <p>Bun.Server()</p>
+
+                </div>
+
+                <div class="navitems">
+                    <p>WebSocket</p>
+
+                </div>
+
+                <div class="navitems ">
+                    <p>bun:sqliter</p>
+
+                </div>
+
+
+            </div>
+
+            <div class="http">
+                <h2>Server-side rendering React</h2>
+                <p>HTTP requests per second (Linux x64)</p>
+            </div>
+
+            <div class="request-graph">
+                <div class="bun">
+                    <div class="bun-req">66,706</div>
+                    <div class="graphs graph1">
+                        <img src="./public/bun logo.png" alt="">
+                    </div>
+                </div>
+
+                <div class="bun">
+                    <div class="deno-req">32,921</div>
+                    <div class="graphs graph2"></div>
+                </div>
+
+                <div class="bun">
+                    <div class="node-req">13.967</div>
+                    <div class="graphs graph3"></div>
+                </div>
+            </div>
+
+            <div class="soft-name">
+                <div class="software soft1">
+                    <h2>Bun</h2>
+                    <p>v1.0</p>
+                </div>
+                <div class="software soft2">
+                    <h2>Deno.server()</h2>
+                    <p>v1.36.2</p>
+                </div>
+                <div class="software sof3">
+                    <h2>Node.js</h2>
+                    <p>20.5.0</p>
+                </div>
+            </div>
+
+            <div class="viewbench">
+                <p>View benchmark</p>
+            </div>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- javascript runtime  -->
+
+    <section class="javascript-runtime">
+        <div class="runtime-intro">
+            <span class="bunrun">$ bun run</span>
+            <h1>Bun is a JavaScript runtime.</h1>
+            <p class="goals">Bun is a new JavaScript runtime built from scratch to serve the modern JavaScript
+                ecosystem. It has three major design goals:</p>
+
+
+            <ul>
+                <div class="java-list">
+                    <div class="lists">
+                        <div class="list ">
+                            <li></li>
+                        </div>
+
+                        <div class="list-content">
+                            <b> Speed. </b>
+                            <span>
+                                Bun starts fast and runs fast. It extends JavaScriptCore, the performance-minded JS
+                                engine built
+                                for
+                                Safari. As computing moves to the edge, this is critical.
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div class="lists">
+                        <div class="list">
+                            <li></li>
+                        </div>
+
+                        <div class="list-content">
+                            <b> Elegant APIs. </b>
+                            <span>
+                                Bun provides a minimal set of highly-optimimized APIs for performing common tasks, like
+                                starting
+                                an
+                                HTTP server and writing files.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="lists">
+                        <div class="list">
+                            <li></li>
+                        </div>
+
+                        <div class="list-content">
+                            <b> Cohesive DX. </b>
+                            <span>
+
+                                Bun is a complete toolkit for building JavaScript apps, including a package manager,
+                                test
+                                runner,
+                                and bundler.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+
+
+            <p class="btmpara"> Bun is designed as a drop-in replacement for Node.js. It natively implements hundreds of
+                Node.js and Web APIs, including <span>fs</span> ,<span>path</span> ,<span>Buffer</span> and more.</p>
+
+            <p class="btmpara">The goal of Bun is to run most of the world's server-side JavaScript and provide tools to
+                improve performance, reduce complexity, and multiply developer productivity.</p>
+
+        </div>
+
+        <!-- grid section  -->
+
+
+        <div class="grid-sec">
+
+            <div class="grid-items grid1 ">
+                <div class="grid-heading">
+                    <h1> Drop-in Node.js compatibility</h1>
+                    <div class="grid-icon">
+
+                        <a href=""><i class="fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+                <div class="grid-para">
+                    <p>Bun aims for complete Node.js API compatibility. Most npm packages intended for Node.js
+                        environments will work with Bun out of the box; the best way to know for certain is to try it.
+
+                        This page is updated regularly to reflect compatibility status of the latest version of Bun. If
+                        you run into any bugs with a particular package, please open an issue. Opening issues for
+                        compatibility.</p>
+                </div>
+
+            </div>
+
+            <div class="grid-items grid2">
+                <div class="grid-heading">
+                    <h1>Works with node_modules</h1>
+                    <div class="grid-icon">
+
+                        <a href=""><i class="fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+                <div class="grid-para">
+                    <p>With Bun, you still use package.json to manage your dependencies. Use Bun's native npm client to
+                        see just how fast installing dependencies can be..</p>
+                </div>
+            </div>
+            <div class="grid-items grid3">
+                <div class="grid-heading">
+                    <h1> Web-standard APIs</h1>
+                    <div class="grid-icon">
+
+                        <a href=""><i class="fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+                <div class="grid-para">
+                    <p>Bun implements the Web-standard APIs you know and love, including fetch, ReadableStream, Request,
+                        Response, WebSocket, and FormData..</p>
+                </div>
+            </div>
+            <div class="grid-items grid4">
+                <div class="grid-heading">
+                    <h1> Fast running performance</h1>
+                    <div class="grid-icon">
+
+                        <a href=""><i class="fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+                <div class="grid-para">
+                    <p>Bun extends the JavaScriptCore engine—the performance-minded JS engine built for Safari-with
+                        native-speed functionality implemented in Zig..</p>
+                </div>
+            </div>
+            <div class="grid-items grid5">
+                <div class="grid-heading">
+                    <h1> No more module madness</h1>
+                    <div class="grid-icon">
+
+                        <a href=""><i class="fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+                <div class="grid-para">
+                    <p>Forget the complicated rules around CommonJS, ESM, file extensions, resolution priority, and
+                        package.json configurations. With Bun, it just works..</p>
+                </div>
+            </div>
+            <div class="grid-items grid6">
+                <div class="grid-heading">
+                    <h1> JSX</h1>
+                    <div class="grid-icon">
+
+                        <a href=""><i class="fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+                <div class="grid-para">
+                    <p>JSX just works. Bun internally transpiles JSX syntax to vanilla JavaScript. Like TypeScript
+                        itself, Bun assumes React by default but respects custom JSX transforms defined in
+                        tsconfig.json..</p>
+                </div>
+            </div>
+
+
+
+
+            <div class="grid-items grid8">
+                <div class="grid-heading">
+                    <h1> TypeScript</h1>
+                    <div class="grid-icon">
+
+                        <a href=""><i class="fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+                <div class="grid-para">
+                    <p>TypeScript is a first-class citizen in Bun. Directly execute .ts and .tsx files. Bun respects
+                        your settings configured in tsconfig.json, including "paths", "jsx", and more.</p>
+                </div>
+            </div>
+            <div class="grid-items grid9">
+                <div class="grid-heading">
+                    <h1> Watch mode</h1>
+                    <div class="grid-icon">
+
+                        <a href=""><i class="fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+                <div class="grid-para">
+                    <p>The bun run CLI provides a smart --watch flag that automatically restarts the process when any
+                        imported file changes..</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- /* grid bottom section  */  -->
+
+        <div class="bakedin">
+            <h1>The APIs you need. Baked in.</h1>
+        </div>
+
+        <div class="grid-btn">
+            <div class=" btns">
+                <button class="btn">Start an HTTP server</button>
+                <button class="btn">Start a WebSocket server</button>
+                <button class="btn">Read and write files</button>
+                <button class="btn">Read and write files</button>
+            </div>
+
+            <div class=" btns">
+                <button class="btn">Bundle for the browser</button>
+                <button class="btn">Write a test</button>
+                <button class="btn">File system routing</button>
+                <button class="btn">Read a stream</button>
+            </div>
+
+            <div class=" btns">
+                <button class="btn">Spawn a child processr</button>
+                <button class="btn">Call a C function</button>
+
+            </div>
+        </div>
+
+
+        <!-- grid code box   -->
+
+        <div class="grid-codebox">
+            <div class="index-txt">
+                <p>index.tsx</p>
+            </div>
+
+            <div class="grid-code-content">
+
+                <div class="gridcode">
+                    <p>
+
+                        const server = Bun.serve({
+                    </p>
+                    <p>
+                        port: 3000,
+
+                    </p>
+                    <p>
+                        fetch(request) {
+
+                    </p>
+                    <p>
+                        return new Response("Welcome to Bun!");
+
+                    </p>
+                    <p>
+                    },
+
+                    </p>
+                    <p>
+                    });
+
+                    </p>
+                    <p>
+
+                        console.log(`Listening on localhost:${server.port}`);
+                    </p>
+                  
+                          
+                    </p>
+                </div>
+                <div class="grid-copybtn">
+                    <a href=""><i class="fa-regular fa-copy"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </section>
+
+
+    <!-- section bun install -->
+
+    <!-- <section class="bun-install">
+        <div class="bun-install-btn">
+
+            <button class="install">$ bun install</button>
+        </div>
+
+        <div class="bun-install-header">
+            <h1>Bun is an npm-compatible package </h1>
+            <h1>manager.</h1>
+        </div>
+
+         bun-install range  -->
+
+    <!-- <div class="bun-install-range">
+            <div class=" ranges range1">
+                <div class="range-title">
+                    <p>Bun</p>
+                </div>
+                <div class="range-graph">
+
+                    <div class=" range-area1"></div>
+                    <div class="range-time">00.36s</div>
+                </div>
+
+
+            </div>
+
+            <div class=" ranges range2">
+                <div class="range-title">
+                    <p>pnpm</p>
+                </div>
+                <div class="range-graph">
+
+                    <div class=" range-area range-area2">
+                        <i>
+                            17x slower </i>
+                    </div>
+                    <div class="range-time">06.44s</div>
+                </div>
+
+
+            </div>
+
+            <div class=" ranges range3">
+                <div class="range-title">
+                    <p>npm</p>
+                </div>
+                <div class="range-graph">
+
+                    <div class=" range-area range-area3">
+                        <i>
+                            29x slower </i>
+                    </div>
+                    <div class="range-time">10.58s</div>
+                </div>
+
+
+            </div>
+
+            <div class=" ranges range4">
+                <div class="range-title">
+                    <p>Yarn</p>
+                </div>
+                <div class="range-graph">
+
+                    <div class=" range-area range-area4">
+                        <i>
+                            33x slower </i>
+                    </div>
+                    <div class="range-time">12.08s</div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="bottom-para">
+            <p>Installing dependencies from cache for a Remix app.</p>
+            <p class="benchmark">View benchmark</p>
+
+        </div> -->
+
+    <!-- bun install grid section  -->
+
+    <!-- <div class="bun-install-grid">
+            <div class="bun-install-grid-items bun-grid1 ">
+                <div class="bun-install-grid-heading">
+                    <h1>Node.js compatible </h1>
+                    <div class="bun-install-grid-icon">
+
+                        <a href=""><i class="fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+                <div class="bun-install-grid-para">
+                    <p>Bun still installs your dependencies into <span>node_modules</span> like <span>npm </span> and
+                        other package managers-it just does it faster. You don't need to use the Bun runtime to use Bun
+                        as a package manager.</p>
+                </div>
+
+            </div>
+            <div class="bun-install-grid-items bun-grid2 ">
+                <div class="bun-install-grid-heading">
+                    <h1>Workspaces </h1>
+                    <div class="bun-install-grid-icon">
+
+                        <a href=""><i class="fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+                <div class="bun-install-grid-para">
+                    <p>Workspaces are supported out of the box. Bun reads the <span> workspaces</span> key from your
+                        <span> package.json </span> and installs dependencies for your whole monorepo.
+                    </p>
+                </div>
+
+            </div>
+            <div class="bun-install-grid-items bun-grid3 ">
+                <div class="bun-install-grid-heading">
+                    <h1>Binary lockfile </h1>
+                    <div class="bun-install-grid-icon">
+
+                        <a href=""><i class="fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+                <div class="bun-install-grid-para">
+                    <p>After installation, Bun creates a binary <span>bun.lockb</span> lockfile with the resolved
+                        versions of each dependency. The binary format makes reading and parsing much faster than JSON-
+                        or Yaml-based lockfiles.</p>
+                </div>
+
+            </div>
+
+            <div class="bun-install-grid-items bun-grid4 ">
+                <div class="bun-install-grid-heading">
+                    <h1>Crazy fast </h1>
+                    <div class="bun-install-grid-icon">
+
+                        <a href=""><i class="fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+                <div class="bun-install-grid-para">
+                    <p>Bun uses the fastest system calls available on each operating system to make installs faster than
+                        you'd think possible.</p>
+                </div>
+
+            </div>
+
+            <div class="bun-install-grid-items bun-grid5 ">
+                <div class="bun-install-grid-heading">
+                    <h1>Global install cache </h1>
+                    <div class="bun-install-grid-icon">
+
+                        <a href=""><i class="fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+                <div class="bun-install-grid-para">
+                    <p>Download once, install anywhere. Bun only downloads a particular version of a package from npm
+                        once; future installations will copy it from the cache.</p>
+                </div>
+
+            </div>
+
+            <div class="bun-install-grid-items bun-grid6 ">
+                <div class="bun-install-grid-heading">
+                    <h1> Familiar API</h1>
+                    <div class="bun-install-grid-icon">
+
+                        <a href=""><i class="fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+                <div class="bun-install-grid-para">
+                    <p>Bun's CLI uses commands and flags that will feel familiar to any users of <span>npm</span> ,
+                        <span>pnpm</span> , or
+                        <span>yarn</span>.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="replace-yarn">
+            <div class="replace-yarn-para">
+                Replace <span> yarn</span> with <span>bun install</span> to get 30x faster package installs.
+            </div>
+            <div class="replace-yarn-btn">
+                <button class="btntry">Try it ></button>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    section bun test  -->
+
+    <!-- <section class="bun-test">
+        <div class="bun-test-btn">
+            <button class=" install bt-btn">$ bun test</button>
+        </div>
+
+        <div class="bun-test-header">
+            <h1>Bun is a test runner that makes </h1>
+            <h1>the rest look like test walkers.</h1>
+        </div>  -->
+
+    <!-- bun-test range  -->
+
+    <!-- <div class="bun-test-range  ">
+            <div class=" ranges range1">
+                <div class="range-title bun-test-title">
+                    <p>Bun</p>
+                </div>
+                <div class="range-graph">
+
+                    <div class="range-area1"></div>
+                    <div class="range-time">00.23s</div>
+                </div>
+
+
+            </div>
+
+            <div class=" ranges range2 ">
+                <div class="range-title bun-test-title">
+                    <p>Vitest</p>
+                </div>
+                <div class="range-graph">
+
+                    <div class=" range-area range-area2">
+                        <i>
+                            5x slower </i>
+                    </div>
+                    <div class="range-time">01.91s</div>
+                </div>
+
+
+            </div>
+
+            <div class=" ranges range3">
+                <div class="range-title bun-test-title">
+                    <p>Jest+SWC</p>
+                </div>
+                <div class="range-graph">
+
+                    <div class=" range-area range-area3">
+                        <i>
+                            8x slower </i>
+                    </div>
+                    <div class="range-time">03.07s</div>
+                </div>
+
+
+            </div>
+
+            <div class=" ranges range4">
+                <div class="range-title bun-test-title">
+                    <p>Jest+tsjest</p>
+                </div>
+                <div class="range-graph">
+
+                    <div class=" range-area range-area4">
+                        <i>
+                            18x slower </i>
+                    </div>
+                    <div class="range-time">06.71s</div>
+                </div>
+
+
+            </div>
+
+            <div class=" ranges range5">
+                <div class="range-title bun-test-title">
+                    <p>Jest+Babel</p>
+                </div>
+                <div class="range-graph">
+
+                    <div class=" range-area range-area5">
+                        <i>
+                            20x slower </i>
+                    </div>
+                    <div class="range-time">07.43s</div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="bottom-para">
+            <p>Running the test suite for <span>Zod</span> </p>
+            <p class="benchmark">View benchmark</p>
+
+        </div> -->
+
+    <!-- bun-test-grid-section  -->
+    <!-- 
+
+        <div class="bun-install-grid">
+            <div class="bun-install-grid-items bun-grid1 ">
+                <div class="bun-install-grid-heading">
+                    <h1>Node.js compatible </h1>
+                    <div class="bun-install-grid-icon">
+
+                        <a href=""><i class="fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+                <div class="bun-install-grid-para">
+                    <p>Bun still installs your dependencies into <span>node_modules</span> like <span>npm </span> and
+                        other package managers-it just does it faster. You don't need to use the Bun runtime to use Bun
+                        as a package manager.</p>
+                </div>
+
+            </div>
+            <div class="bun-install-grid-items bun-grid2 ">
+                <div class="bun-install-grid-heading">
+                    <h1>Workspaces </h1>
+                    <div class="bun-install-grid-icon">
+
+                        <a href=""><i class="fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+                <div class="bun-install-grid-para">
+                    <p>Workspaces are supported out of the box. Bun reads the <span> workspaces</span> key from your
+                        <span> package.json </span> and installs dependencies for your whole monorepo.
+                    </p>
+                </div>
+
+            </div>
+            <div class="bun-install-grid-items bun-grid3 ">
+                <div class="bun-install-grid-heading">
+                    <h1>Binary lockfile </h1>
+                    <div class="bun-install-grid-icon">
+
+                        <a href=""><i class="fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+                <div class="bun-install-grid-para">
+                    <p>After installation, Bun creates a binary <span>bun.lockb</span> lockfile with the resolved
+                        versions of each dependency. The binary format makes reading and parsing much faster than JSON-
+                        or Yaml-based lockfiles.</p>
+                </div>
+
+            </div>
+
+            <div class="bun-install-grid-items bun-grid4 ">
+                <div class="bun-install-grid-heading">
+                    <h1>Crazy fast </h1>
+                    <div class="bun-install-grid-icon">
+
+                        <a href=""><i class="fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+                <div class="bun-install-grid-para">
+                    <p>Bun uses the fastest system calls available on each operating system to make installs faster than
+                        you'd think possible.</p>
+                </div>
+
+            </div>
+
+            <div class="bun-install-grid-items bun-grid5 ">
+                <div class="bun-install-grid-heading">
+                    <h1>Global install cache </h1>
+                    <div class="bun-install-grid-icon">
+
+                        <a href=""><i class="fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+                <div class="bun-install-grid-para">
+                    <p>Download once, install anywhere. Bun only downloads a particular version of a package from npm
+                        once; future installations will copy it from the cache.</p>
+                </div>
+
+            </div>
+
+            <div class="bun-install-grid-items bun-grid6 ">
+                <div class="bun-install-grid-heading">
+                    <h1> Familiar API</h1>
+                    <div class="bun-install-grid-icon">
+
+                        <a href=""><i class="fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+                <div class="bun-install-grid-para">
+                    <p>Bun's CLI uses commands and flags that will feel familiar to any users of <span>npm</span> ,
+                        <span>pnpm</span> , or
+                        <span>yarn</span>.
+                    </p>
+                </div>
+
+            </div>
+            <div class="bun-install-grid-items bun-grid7 ">
+                <div class="bun-install-grid-heading">
+
+                    <div class="bun-install-grid-icon">
+
+
+                    </div>
+                </div>
+                <div class="bun-install-grid-para">
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="bun-install-grid-items bun-grid8 ">
+                <div class="bun-install-grid-heading">
+                    <h1> </h1>
+                    <div class="bun-install-grid-icon">
+
+
+                    </div>
+                </div>
+                <div class="bun-install-grid-para">
+
+                </div>
+
+            </div>
+            <div class="bun-install-grid-items bun-grid9 ">
+                <div class="bun-install-grid-heading">
+                    <h1> Familiar API</h1>
+                    <div class="bun-install-grid-icon">
+
+                        <a href=""><i class="fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+                <div class="bun-install-grid-para">
+                    <p>Bun's CLI uses commands and flags that will feel familiar to any users of <span>npm</span> ,
+                        <span>pnpm</span> , or
+                        <span>yarn</span>.
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="replace-yarn">
+            <div class="replace-yarn-para">
+                Replace <span> jest</span> with <span>bun test</span> to get 10-30x faster package installs.
+            </div>
+            <div class="replace-yarn-btn">
+                <button class="btntry">Try it ></button>
+            </div>
+        </div>
+
+
+    </section>
+
+
+     quick start  -->
+
+
+    <!-- <div class="quick-start-container">
+        <span class="focus-install-bun">INSTALL BUN</span>
+        <span class="focus-Write-code">WRITE YOUR CODE</span>
+        <span class="focus-run-file">RUN THE FILE</span>
+
+        <div class="install-bun">
+            <div class="one number">
+                <span>1</span>
+            </div>
+
+
+            <div class="one-code ">
+
+                <div class="code-sec">
+
+                    <div class="code-copy">
+                        <a href=""><i class="fa-regular fa-dollar-sign "></i></a>
+                        <span>curl -fsSL https://bun.sh/install | bash</span>
+
+                    </div>
+                    <div class="quick-copy">
+
+                        <a href=""><i class="fa-regular fa-copy"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="install-bun">
+            <div class="two number">
+                <span>2</span>
+            </div>
+
+
+            <div class="grid-codebox your-code">
+                <div class="index-txt">
+                    <p>index.tsx</p>
+                </div>
+
+                <div class="grid-code-content">
+
+                    <div class="gridcode your-pre-code">
+                        <pre>
+                            const server = Bun.serve({
+                                port: 3000,
+                                fetch(request) {
+                                  return new Response("Welcome to Bun!");
+                                },
+                              });
+                              
+                              console.log(`Listening on localhost:${server.port}`);
+                        </pre>
+                    </div>
+                    <div class="grid-copybtn your-code-btn">
+                        <a href=""><i class="fa-regular fa-copy"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="install-bun">
+            <div class="three number">
+                <span>3</span>
+            </div>
+
+
+            <div class="one-code ">
+
+                <div class="code-sec">
+
+                    <div class="code-copy">
+                        <a href=""><i class="fa-regular fa-dollar-sign "></i></a>
+                        <span>bun index.tsx</span>
+
+                    </div>
+                    <div class="quick-copy">
+
+                        <a href=""><i class="fa-regular fa-copy"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="quick-start-btn">
+            <div>
+                <button class="quick-btn btn1">Install Bun</button>
+
+            </div>
+
+
+            <div>
+                <button class="quick-btn  btn2">Quick Start ></button>
+
+            </div>
+        </div>
+
+    </div>
+
+
+     section anchors  -->
+
+    <!-- <section class="anchor">
+
+        <div class="anchor-header">
+            <h1>Learn by example.</h1>
+            <p>Our guides break down how to perform common tasks with Bun.</p>
+
+        </div> -->
+
+    <!-- anchor boxes -->
+
+    <!-- <div class="anchor-box">
+            <div class="box1 ancBox">
+                <div class="ancBoxHeader">
+
+                    <p>Processes</p>
+                    <h3>Spawn a child process with Bun</h3>
+                </div>
+
+                <div class="view-guide">
+                    <p>View guide ></p>
+
+                </div>
+
+
+            </div>
+
+            <div class="box2 ancBox">
+                <div class="ancBoxHeader">
+
+                    <p>Streams</p>
+                    <h3>Convert a ReadableStream to a String with Bun</h3>
+                </div>
+
+                <div class="view-guide">
+                    <p>View guide ></p>
+
+                </div>
+            </div>
+
+            <div class="box3 ancBox">
+                <div class="ancBoxHeader">
+
+                    <p>Ecosystem</p>
+                    <h3>Build a frontend using Vite and Bun</h3>
+                </div>
+
+                <div class="view-guide">
+                    <p>View guide ></p>
+
+                </div>
+            </div>
+        </div>  -->
+
+    <!-- anchors list  -->
+
+    <!-- column 1 -->
+
+    <!-- <div class="anchor-lists">
+            <div class=" columns col1">
+                <div class="anchor-lists-header">
+                    <h5>Package manager</h5>
+                </div>
+                <div class="column-list package-lists">
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a peer dependency</a>
+                    <a href="">Add a tarball dependency</a>
+                    <a href="">Add a tarball dependency</a>
+                    <a href="">Add an optional dependency</a>
+                    <a href="">Add a development dependency</a>
+                    <a href="">Generate a human-readable lockfile</a>
+                    <a href="">Configuring a monorepo using workspaces</a>
+                    <a href="">Install a package under a different name</a>
+                    <a href="">Install dependencies with Bun in GitHub Actions</a>
+                    <a href="">Override the default npm registry for bun install</a>
+                    <a href="">Configure a private registry for an organization scope with bun install</a>
+
+                </div>
+
+                <div class="anchor-lists-header">
+                    <h5>http</h5>
+                </div>
+
+                <div class="column-list http-lists">
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a peer dependency</a>
+                    <a href="">Add a tarball dependency</a>
+                    <a href="">Add a tarball dependency</a>
+                    <a href="">Add an optional dependency</a>
+
+                </div>
+
+                <div class="anchor-lists-header">
+                    <h5>runtime</h5>
+                </div>
+
+                <div class="column-list runtime-lists">
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a peer dependency</a>
+                    <a href="">Add a tarball dependency</a>
+                    <a href="">Add a tarball dependency</a>
+                    <a href="">Add an optional dependency</a>
+                    <a href="">Add a peer dependency</a>
+                    <a href="">Add a tarball dependency</a>
+                    <a href="">Add a tarball dependency</a>
+                    <a href="">Add an optional dependency</a>
+
+                </div>
+
+                <div class="anchor-lists-header">
+                    <h5>websocket</h5>
+                </div>
+
+                <div class="column-list websocket-lists">
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a peer dependency</a>
+                    <a href="">Add a tarball dependency</a>
+                    <a href="">Add a tarball dependency</a>
+
+                </div>
+
+            </div> -->
+
+    <!-- column 2  -->
+
+    <!-- <div class=" columns col2">
+                <div class="anchor-lists-header">
+                    <h5>Package manager</h5>
+                </div>
+
+                <div class="column-list package-lists">
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+
+                </div>
+
+
+                <div class="anchor-lists-header">
+                    <h5>Package manager</h5>
+
+                </div>
+
+                <div class="column-list package-lists">
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+
+                </div>
+
+
+
+
+                <div class="anchor-lists-header">
+                    <h5>Package manager</h5>
+                </div>
+
+                <div class="column-list package-lists">
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+
+                </div>
+
+            </div> -->
+
+
+    <!-- column 3 -->
+    <!-- <div class=" columns col3">
+                <div class="anchor-lists-header">
+                    <h5>Package manager</h5>
+                </div>
+                <div class="column-list package-lists">
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+    
+                </div>
+
+                <div class="anchor-lists-header">
+                    <h5>Package manager</h5>
+                </div>
+                <div class="column-list package-lists">
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                  
+                </div>
+
+                <div class="anchor-lists-header">
+                    <h5>Package manager</h5>
+                </div>
+                <div class="column-list package-lists">
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a dependency</a>
+                  
+                </div>
+
+                <div class="anchor-lists-header">
+                    <h5>Package manager</h5>
+                </div>
+                <div class="column-list package-lists">
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                    <a href="">Add a Git dependency</a>
+                    <a href="">Add a dependency</a>
+                   
+                  
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section> -->
+
+    <!-- footer  -->
+
+    <!-- <footer>
+        <div class="footer-container">
+            <div class="footer-content content1">
+                <div class="footer-header">
+                    <h4>resorces</h4>
+                </div>
+
+                <div class="footer-services">
+                    <a href="">Docs</a>
+                    <a href="">Guides</a>
+                    <a href="">Discord</a>
+                    <a href="">GitHub</a>
+                    <a href="">Blog </a>
+                </div>
+            </div>
+            <div class="footer-content content2">
+                <div class="footer-header">
+                    <h4>toolkit</h4>
+                </div>
+
+                <div class="footer-services">
+                    <a href="">Runtime</a>
+                    <a href="">Package manager</a>
+                    <a href="">Test runner</a>
+                    <a href="">Bundler</a>
+                    <a href="">Package runner</a>
+                </div>
+            </div>
+            <div class="footer-content content3">
+                <div class="footer-header">
+                    <h4>project</h4>
+                </div>
+
+                <div class="footer-services">
+                    <a href="">Roadmap</a>
+                    <a href="">Contributing</a>
+                    <a href="">License</a>
+                   
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom-para">
+            <p>Baked with ❤️ in San Francisco</p>
+            <a href="">We're hiring →</a>
+        </div>
+    </footer> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
