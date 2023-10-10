@@ -126,11 +126,23 @@ aside {
 li {
     list-style: none;
     height: 40px;
-       display: flex;
+   display: flex;
     justify-content: center;
     align-items: center;
 
 }
+
+.list li a:hover{
+    border-bottom: 2px solid white;
+    /* color: rgb(189, 47, 71) ; */
+    
+}
+.list li:hover{
+    background-color: rgb(189, 47, 71);
+
+}
+
+
 
 .copyright {
     color: white;
@@ -354,6 +366,7 @@ article {
     gap: 5px;
     justify-content: center;
     color: rgb(237, 57, 108);
+    cursor: pointer;
 }
 
 .show_all img {
@@ -380,6 +393,7 @@ article {
     color: white;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 footer{
