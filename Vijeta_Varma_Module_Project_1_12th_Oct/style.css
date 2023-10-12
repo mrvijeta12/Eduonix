@@ -42,7 +42,17 @@ nav {
     height: 10%;
     display: flex;
     justify-content: space-between;
+
 }
+nav a ,.book_btn{
+    transition: all 0.5s ease;
+}
+
+nav a:hover,.book_btn:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
 
 .logo {
     width: 10%;
@@ -97,6 +107,8 @@ nav {
     text-decoration: none;
     color: var(--font-color);
 }
+
+
 
 
 /* main_content section */
@@ -407,6 +419,7 @@ article {
     outline: none;
     border: none;
     cursor: pointer;
+  
 }
 
 footer {
