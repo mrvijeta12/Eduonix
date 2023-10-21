@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Art</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="project-container">
+
+        <div class="container">
+            <img class="image" id="image1" onclick="showRegistrationForm()" title="Register"
+                src="./Images/samantha-borges-EeS69TTPQ18-unsplash.jpg" alt="">
+            <img class="image" id="image2" onclick="showUserInfo()" title="User Information"
+                src="./Images/ben-sweet-2LowviVHZ-E-unsplash.jpg" alt="">
+            <img class="image" id="image3" onclick="diceRoll()" title="Click three time to roll dice"
+                src="./Images/erik-mclean-C3T8KTZxTFM-unsplash.jpg" alt="">
+            <img class="image" id="image4" onclick="generateRandomCode()" title="Go for it"
+                src="./Images/brett-jordan-MHS7g_q-6mE-unsplash.jpg" alt="" style="display: none;">
+        </div>
+
+        <form action="" id="registration-form" style="display: none;" onsubmit="return false;">
+
+            <div class="inputs">
+                <div class="name label">
+                    <label for="name">Name:</label>
+                </div>
+                <div class="input-name input-box">
+                    <input type="text" id="name">
+                </div>
+
+            </div>
+
+            <div class="inputs">
+                <div class="email label">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="email-input input-box">
+                    <input type="email" id="email">
+                </div>
+
+            </div>
+
+            <div class="inputs">
+
+                <div class="username label">
+                    <label for="username">Username:</label>
+                </div>
+                <div class="username-input input-box">
+                    <input type="text" name="" id="username">
+                </div>
+            </div>
+
+            <button id="register" onclick="registerUser()">Register</button>
+
+        </form>
+
+        <div id="user-info" style="display: none;">
+
+            <h2>User Info:</h2>
+            <p><strong>Name: </strong><span id="user-name"></span></p>
+            <p><strong>Email: </strong><span id="user-email"></span></p>
+            <p><strong>Username: </strong><span id="user-username"></span></p>
+
+        </div>
+
+        <div id="message" style="display: none;"></div>
+
+        <div id="congratulations" style="display: none;">
+
+            <h1>Congratulations</h1>
+            <img src="./Images/eilis-garvey-QoMQcDOadgk-unsplash.jpg" id="congrates" alt="">
+
+        </div>
+
+        <footer style="display:none;" id="footer">
+
+            <div class="madeBy">
+                <span>Made With</span>
+                <img src="./Images/heart-angle-svgrepo-com.svg" alt="">
+                <span>Vijeta Varma</span>
+
+            </div>
+
+
+
+        </footer>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

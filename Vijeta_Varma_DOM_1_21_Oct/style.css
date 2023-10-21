@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    padding: 50px;
+}
+
+.project-container {
+    padding: 40px 10px;
+    background-image: linear-gradient(to right, #d3cce3, #e9e4f0);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+.container img {
+    width: 250px;
+    height: 200px;
+    transition: all 0.2s linear;
+}
+
+.container img:hover {
+    transform: scale(1.06);
+    box-shadow: 0px 0px 3px 3px rgb(230, 230, 230);
+}
+
+#registration-form {
+    margin: 40px auto 0px;
+    width: 50%;
+    padding: 20px;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+
+}
+
+#registration-form .input-box {
+    width: 70%;
+}
+
+#registration-form .input-box input {
+    outline: none;
+    width: 100%;
+    padding: 4px 6px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+#registration-form .label {
+    width: 20%;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.inputs {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    margin-bottom: 20px;
+
+}
+
+#register {
+
+    padding: 8px 12px;
+    color: white;
+    background-color: #828181;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#user-info,
+#message {
+    text-align: center;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    width: 40%;
+    margin: 40px auto 0px;
+    color: white;
+    padding: 20px;
+}
+
+#user-info p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+
+}
+
+#user-info h2 {
+    margin-bottom: 15px;
+}
+
+#congratulations img {
+    width: 600px;
+    height: 400px;
+}
+
+#congratulations {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#congratulations h1 {
+    margin: 15px 0px;
+
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    color: rgb(14, 13, 13);
+    font-size: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.madeBy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px;
+
+}
+
+@media screen and (max-width:1000px) {
+
+    #registration-form,
+    #user-info {
+        width: 80%;
+    }
+
+}
+
+
+@media screen and (max-width:870px) {
+    #congratulations img {
+        width: 530px;
+        height: 400px;
+    }
+
+    #message {
+        width: 72%;
+    }
+
+    .project-container {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width:520px) {
+    #user-info p {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        text-align: left;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:710px) {
+    #congratulations img {
+        width: 90%;
+        height: 50%;
+    }
+
+    .container img {
+        width: 90%;
+        height: 50%;
+    }
+
+    #message {
+        width: 90%;
+    }
+
+    #congratulations h1 {
+        font-size: 25px;
+
+    }
+
+    #registration-form,
+    #user-info {
+        width: 100%;
+    }
+
+    .inputs {
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #registration-form .input-box {
+        width: 100%;
+    }
+
+    #registration-form .label,
+    #register {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width:370px) {
+    #congratulations h1 {
+        font-size: 100%;
+
+    }
+
+    #register {
+        padding: 4px;
+    }
+
+    #congratulations {
+        width: 100%;
+    }
+
+    .container {
+        gap: 20px;
+    }
+
+    .project-container {
+        padding: 10px;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    #user-info h2 {
+        font-size: medium;
+    }
+
+    #user-info,
+    #message {
+        padding: 10px 5px;
+    }
+
+
+    .madeBy span {
+        font-size: 12px;
+    }
+
+    .madeBy img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .container img:hover {
+        transform: scale(1.03);
+    }
+
+}
