@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+table{
+     width: 80%;
+    margin: 50px auto;
+    background-color: black;
+    color: white;
+    border-collapse: collapse;
+    font-size: 20px;
+    font-family: sans-serif;
+    
+}
+
+img{
+    width: 40px;
+}
+
+tr{
+    border-bottom: 1px solid grey;
+   }
+   
+td{
+    padding: 10px;
+}
