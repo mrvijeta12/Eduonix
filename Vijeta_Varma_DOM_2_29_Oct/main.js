@@ -19,10 +19,6 @@ data().then((objectData) => {
 
     document.getElementById("crypto-table").innerHTML = tableData
 
-
-
-
-
 }).catch((error) => {
     console.log(error);
 });
