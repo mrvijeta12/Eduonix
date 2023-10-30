@@ -23,3 +23,97 @@ data().then((objectData) => {
     console.log(error);
 });
 
+
+// ASSIGNMENT 2
+
+// MULTI-LEVEL INHERITANCE 
+
+// class Employee {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+
+//   infoEmployee() {
+//     console.log(`Hi, I am ${this.name}, and I am ${this.age} years old.`);
+//   }
+// }
+
+// class Manager extends Employee {
+//   constructor(name, age, post) {
+//     super(name, age);
+//     this.post = post;
+//   }
+
+//   infoManager() {
+//     console.log(`working... ${this.post} `);
+//   }
+// }
+
+// class OtherEmployee extends Manager {
+//   constructor(name, age, post, project) {
+//     super(name, age, post);
+//     this.project = project;
+//   }
+
+//   infoOtherEmployee() {
+//     console.log(`Myself ${this.name} and I am ${this.age} years old. Currently at a post of ${this.post} and work on ${this.project}.`);
+//   }
+// }
+
+// const result = new OtherEmployee("Aarav", 24, "Senior Engineer", "Backend Project");
+// result.infoEmployee();
+// result.infoManager() ;
+// result.infoOtherEmployee();
+
+
+// HIERARCHICAL INHERITANCE
+
+
+
+// class Food {
+//   constructor(name, category) {
+//     this.name = name;
+//     this.category = category;
+//   }
+
+//   describe() {
+//     console.log(`This is ${this.name}, a type of ${this.category}.`);
+//   }
+// }
+
+// class Fruit extends Food {
+//   constructor(name,category) {
+//     super(name,category);
+//   }
+//   isSweet() {
+//     console.log(`${this.name} is sweet.`);
+//   }
+// }
+
+// class Vegetable extends Food {
+//   constructor(name,category) {
+//     super(name,category);
+//   }
+
+//   isHealthy() {
+//     console.log(`${this.name} is healthy.`);
+//   }
+// }
+
+// const mango = new Fruit("Mango" ,"Fruit");
+// const sweet_potato = new Vegetable("Sweet-potato" ,"Vegetable");
+// mango.describe();
+// sweet_potato.describe();
+
+
+
+
+
+
+
+
+
+
+
+
