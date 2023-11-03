@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Location</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>Weather API</h2>
+        <button id="btn" onclick="getWeatherData()">Fetch Data</button>
+    </div>
+
+
+    <div id="map" style="display: none;">
+
+        <h2>Weather API</h2>
+
+        <div id="iframe_coordinates">
+
+            <div class=" para">
+                <p class="input">Latitude:</p>
+                <p id="iframe-latitude"></p>
+            </div>
+
+            <div class=" para">
+                <p class="input">Longitude:</p>
+                <p id="iframe-longitude"></p>
+            </div>
+
+        </div>
+
+        <iframe src="https://maps.google.com/maps?q=22.55323,88.37200&output=embed"></iframe>
+
+    </div>
+
+
+    <div id="weather-data" style="display: none;">
+
+        <h2>Weather Data</h2>
+
+        <div id="weather-data-details">
+
+            <div class=" para">
+                <p class="input">ip:</p>
+                <p id="ip-address"></p>
+            </div>
+            <div class=" para">
+                <p class="input">Continent:</p>
+                <p id="continent"></p>
+            </div>
+
+            <div class=" para">
+                <p class="input">Location:</p>
+                <p id="location"></p>
+            </div>
+
+            <div class=" para">
+                <p class="input">State:</p>
+                <p id="state"></p>
+            </div>
+            <div class=" para">
+                <p class="input">City:</p>
+                <p id="city"></p>
+            </div>
+
+            <div class="coordinates">
+
+                <div class=" para">
+                    <p class="input">Latitude:</p>
+                    <p id="latitude"></p>
+                </div>
+
+                <div class=" para">
+                    <p class="input">Longitude:</p>
+                    <p id="longitude"></p>
+                </div>
+
+            </div>
+
+            <div class=" para">
+                <p class="input">Time Zone:</p>
+                <p id="time"></p>
+            </div>
+
+            <div class=" para">
+                <p class="input">Zipcode:</p>
+                <p id="zipcode"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

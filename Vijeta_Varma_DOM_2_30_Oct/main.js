@@ -6,6 +6,7 @@ async function data() {
 }
 
 data().then((objectData) => {
+
     let tableData = "";
     objectData.map((values) => {
         tableData += `<tr>
