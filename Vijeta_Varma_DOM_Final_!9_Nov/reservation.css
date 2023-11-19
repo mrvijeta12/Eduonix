@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #2e2e2e;
+    color: white;
+  }
+
+  div {
+    margin-bottom: 10px;
+  }
+
+  #availabilityMessage {
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+  }
+  #project-container{
+
+      max-width: 50%;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #272727;
+  }
+
+  @media  screen  and (max-width:450px){
+    #project-container{
+      max-width: 100%;
+      margin: 0px;
+    
+    }
+
+
+
+  }
+
+  .container{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      justify-content: center;
+      align-items: center;
+
+      margin: 0px auto;
+      gap: 20px;
+  }
+  h1{
+      color: orange;
+  }
+
+  button{
+      padding: 8px 20px;
+      font-size: 16px;
+      margin-bottom: 20px;
+    
+  }
+
+  input{
+      height: 25px;
+  }
+
+  #profile{
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      max-width: 400px;
+      border: 2px solid red;
+      height: 400px;
+      margin: 50px auto;
+  
+
+  }
+
+  img{
+   width: 100%;
+   height: 80%;   
+  }

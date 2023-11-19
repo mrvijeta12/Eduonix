@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Inquiries and Feedback Form</title>
+    <link rel="stylesheet" href="contactUs.css">
+   
+</head>
+<body>
+
+    <form action="" method="">
+
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="inquiryType">Type of Inquiry/Feedback:</label>
+        <select id="inquiryType" name="inquiryType" required>
+            <option value="general">General Inquiry</option>
+            <option value="technical">Technical Issue</option>
+            <option value="feedback">Product Feedback</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="6" required></textarea>
+
+       
+
+        <input type="submit" value="Submit" id="submitt">
+
+    </form>
+
+</body>
+</html>

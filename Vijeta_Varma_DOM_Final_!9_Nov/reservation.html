@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reservation.css">
+
+  <title>Reservation System</title>
+</head>
+
+<body>
+  <div id="project-container">
+
+    <h1>Reservation System</h1>
+    <div class="container">
+      <label for="datetime">Choose Date and Time:</label>
+      <input type="datetime-local" id="datetime">
+      <button onclick="checkAvailability()">Check Availability</button>
+    </div>
+    <div id="availabilityMessage"></div>
+    <button onclick="confirmReservation()">Confirm Reservation</button>
+
+  </div>
+  <div id="profile" style="display: none;">
+    <img src="./reservation images/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" alt="">
+    <p>Reservation Date & Time </p>
+    <p id="reservedDate&TIme"></p>
+
+  </div>
+  </div>
+
+
+
+
+  <script src="reservation.js"></script>
+</body>
+
+</html>
