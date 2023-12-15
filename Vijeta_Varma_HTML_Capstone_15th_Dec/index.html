@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First E-Commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cdf9a174a4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="box" >
+        <div class="project-container">
+            <div class="container">
+
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="./images/logo.png" alt="">
+
+                    </div>
+
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">About</a> </li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Account</a></li>
+                        </ul>
+                    </nav>
+                    <img src="./images/heart-svgrepo-com.svg" class="cart heart " alt="">
+                    <img src="./images/cart-5-svgrepo-com.svg" class="cart myCart" alt="">
+                    <span class="cart-qua">0</span>
+                    <img src="./images/bars-svgrepo-com.svg" class="menu" alt="" onclick="menuToggle()">
+
+
+
+
+
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <h1>give your workout <br> a new style!</h1>
+                        <p>Success isn't always about greatness. It's about consistency. <br> Consistent hard work leads
+                            to
+                            success. Greatness will come.</p>
+                        <a href="" class="btn">Explore Now &rarr; </a>
+                    </div>
+                    <div class="col">
+                        <img src="./images/football.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- --------- FEATURED PRODUCTS ---------  -->
+
+        <div class="category">
+            <div class="small-container">
+
+                <div class="row">
+                    <div class="col-2">
+                        <img src="./images/ivan-bandura-EWVXMoIWlpA-unsplash.jpg" alt="">
+                    </div>
+                    <div class="col-2">
+                        <img src="./images/parker-burchfield-tvG4WvjgsEY-unsplash.jpg" alt="">
+                    </div>
+                    <div class="col-2">
+                        <img src="./images/joseph-barrientos-4qSb_FWhHKs-unsplash.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ---------- FEATURED PRODUCTS ---------  -->
+
+        <div class="small-container feature-product">
+            <h2 class="title">Feature Products</h2>
+            <div class="row">
+                <div class="col-3" data-name="p-1">
+                    <img src="./images/taylor-dG4Eb_oC5iM-unsplash.jpg" alt="">
+                    <h4>White Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>Rs. 299/-</p>
+                </div>
+                <div class="col-3" data-name="p-2">
+                    <img src="./images/mnz-m1m2EZOZVwA-unsplash.jpg" alt="">
+                    <h4>Mens Black Jeans</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>Rs. 899/-</p>
+                </div>
+                <div class="col-3" data-name="p-3">
+                    <img src="./images/aydin-ghadakchi-lamor-IPJcmgezu0Q-unsplash.jpg" alt="">
+                    <h4>King Perfumes</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>Rs. 1499/-</p>
+                </div>
+                <div class="col-3" data-name="p-4">
+                    <img src="./images/daniel-romero-K63lOA4Ijyk-unsplash.jpg" alt="">
+                    <h4>Ear Buds</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>Rs. 2999/-</p>
+                </div>
+            </div>
+
+            <!-- ---------- LATEST PRODUCTS ----------  -->
+
+
+            <h2 class="title">Latest Products</h2>
+
+            <div class="row">
+                <div class="col-3" data-name="p-5">
+                    <img src="./images/bruno-van-der-kraan-VRERJ5Mjp4c-unsplash.jpg" alt="">
+                    <h4>Mens Watches</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>Rs. 999/-</p>
+                </div>
+                <div class="col-3" data-name="p-6">
+                    <img src="./images/carlos-rodriguez-QhK3jcoPCxM-unsplash.jpg" alt="">
+                    <h4>Moisturizing Gel</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>Rs. 299/-</p>
+                </div>
+                <div class="col-3" data-name="p-7">
+                    <img src="./images/mediamodifier-t8HiP3e5abg-unsplash.jpg" alt="">
+                    <h4>Mens Solid Cap</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>Rs. 199/-</p>
+                </div>
+                <div class="col-3" data-name="p-8">
+                    <img src="./images/mohammad-metri-E-0ON3VGrBc-unsplash.jpg" alt="">
+                    <h4>Heels Sandles</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>Rs. 799/-</p>
+                </div>
+                <div class="col-3" data-name="p-9">
+                    <img src="./images/sarah-dorweiler-m2J105CzEAU-unsplash.jpg" alt="">
+                    <h4>Home Decore Plants</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>Rs. 299/-</p>
+                </div>
+                <div class="col-3" data-name="p-10">
+                    <img src="./images/andrew-valdivia-e1d7njy8nqU-unsplash.jpg" alt="">
+                    <h4> Metallic Oven</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>Rs. 2999/-</p>
+                </div>
+                <div class="col-3" data-name="p-11">
+                    <img src="./images/filip-mroz-gma1zfS3_6E-unsplash.jpg" alt="">
+                    <h4>Light Weight Iron</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>Rs. 599/-</p>
+                </div>
+                <div class="col-3" data-name="p-12">
+                    <img src="./images/maksim-larin-NOpsC3nWTzY-unsplash.jpg" alt="">
+                    <h4>Sneakers</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>Rs. 1399/-</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ----------------- PRODUCTS PREVIEW --------------  -->
+
+        <div class="products-preview">
+
+            <div class="preview " data-target="p-1">
+                <i class="fa-solid fa-xmark"></i>
+                <img src="./images/taylor-dG4Eb_oC5iM-unsplash.jpg" alt="">
+                <h4>White Printed T-Shirt</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, quis?</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Rs. 299/-</p>
+                <a href="" class="btn preview-btn ">Buy Now</a>
+                <a href="" class="btn preview-btn addToCart  ">Add to Cart</a>
+            </div>
+
+            <div class="preview" data-target="p-2">
+                <i class="fa-solid fa-xmark"></i>
+                <img src="./images/mnz-m1m2EZOZVwA-unsplash.jpg" alt="">
+                <h4>Mens Black Jeans</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, maxime!</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Rs. 899/-</p>
+                <a href="" class="btn preview-btn">Buy Now</a>
+                <a href="" class="btn preview-btn ">Add to Cart</a>
+            </div>
+            <div class="preview" data-target="p-3">
+                <i class="fa-solid fa-xmark"></i>
+                <img src="./images/aydin-ghadakchi-lamor-IPJcmgezu0Q-unsplash.jpg" alt="">
+                <h4>King Perfumes</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, maxime!</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Rs. 899/-</p>
+                <a href="" class="btn preview-btn">Buy Now</a>
+                <a href="" class="btn preview-btn  ">Add to Cart</a>
+            </div>
+            <div class="preview" data-target="p-4">
+                <i class="fa-solid fa-xmark"></i>
+                <img src="./images/daniel-romero-K63lOA4Ijyk-unsplash.jpg" alt="">
+                <h4>Ear Buds</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, maxime!</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Rs. 899/-</p>
+                <a href="" class="btn preview-btn">Buy Now</a>
+                <a href="" class="btn preview-btn ">Add to Cart</a>
+            </div>
+            <div class="preview" data-target="p-5">
+                <i class="fa-solid fa-xmark"></i>
+                <img src="./images/bruno-van-der-kraan-VRERJ5Mjp4c-unsplash.jpg" alt="">
+                <h4>Mens Watches</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, maxime!</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Rs. 899/-</p>
+                <a href="" class="btn preview-btn">Buy Now</a>
+                <a href="" class="btn preview-btn ">Add to Cart</a>
+            </div>
+            <div class="preview" data-target="p-6">
+                <i class="fa-solid fa-xmark"></i>
+                <img src="./images/carlos-rodriguez-QhK3jcoPCxM-unsplash.jpg" alt="">
+                <h4>Moisturizing Gel</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, maxime!</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Rs. 899/-</p>
+                <a href="" class="btn preview-btn">Buy Now</a>
+                <a href="" class="btn preview-btn ">Add to Cart</a>
+            </div>
+            <div class="preview" data-target="p-7">
+                <i class="fa-solid fa-xmark"></i>
+                <img src="./images/mediamodifier-t8HiP3e5abg-unsplash.jpg" alt="">
+                <h4>Mens Solid Cap</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, maxime!</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Rs. 899/-</p>
+                <a href="" class="btn preview-btn">Buy Now</a>
+                <a href="" class="btn preview-btn ">Add to Cart</a>
+            </div>
+            <div class="preview" data-target="p-8">
+                <i class="fa-solid fa-xmark"></i>
+                <img src="./images/mohammad-metri-E-0ON3VGrBc-unsplash.jpg" alt="">
+                <h4>Heels Sandles</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, maxime!</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Rs. 899/-</p>
+                <a href="" class="btn preview-btn">Buy Now</a>
+                <a href="" class="btn preview-btn ">Add to Cart</a>
+            </div>
+            <div class="preview" data-target="p-9">
+                <i class="fa-solid fa-xmark"></i>
+                <img src="./images/sarah-dorweiler-m2J105CzEAU-unsplash.jpg" alt="">
+                <h4>Home Decore Plants</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, maxime!</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Rs. 899/-</p>
+                <a href="" class="btn preview-btn">Buy Now</a>
+                <a href="" class="btn preview-btn ">Add to Cart</a>
+            </div>
+            <div class="preview" data-target="p-10">
+                <i class="fa-solid fa-xmark"></i>
+                <img src="./images/andrew-valdivia-e1d7njy8nqU-unsplash.jpg" alt="">
+                <h4> Metallic Oven</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, maxime!</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Rs. 899/-</p>
+                <a href="" class="btn preview-btn">Buy Now</a>
+                <a href="" class="btn preview-btn ">Add to Cart</a>
+            </div>
+            <div class="preview" data-target="p-11">
+                <i class="fa-solid fa-xmark"></i>
+                <img src="./images/filip-mroz-gma1zfS3_6E-unsplash.jpg" alt="">
+                <h4>Light Weight Iron</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, maxime!</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Rs. 899/-</p>
+                <a href="" class="btn preview-btn">Buy Now</a>
+                <a href="" class="btn preview-btn ">Add to Cart</a>
+            </div>
+            <div class="preview" data-target="p-12">
+                <i class="fa-solid fa-xmark"></i>
+                <img src="./images/maksim-larin-NOpsC3nWTzY-unsplash.jpg" alt="">
+                <h4>Sneakers</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, maxime!</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Rs. 899/-</p>
+                <a href="" class="btn preview-btn">Buy Now</a>
+                <a href="" class="btn preview-btn ">Add to Cart</a>
+            </div>
+
+        </div>
+
+        <!-- ----------------- ADD TO CART -------------------  -->
+
+        <div class="cart-table " id="Cart-Table">
+            <h1>Shopping cart</h1>
+            <i class="fa-solid fa-xmark closeCart" onclick="closeCart()"></i>
+            <div class="list-cart">
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/taylor-dG4Eb_oC5iM-unsplash.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <h4>White Printed T-Shirt</h4>
+                    </div>
+                    <div class="total-price">
+                        <p>Rs. 299/-</p>
+                    </div>
+                    <div class="quantity">
+                        <span class="minus">
+                            < </span>
+                                <span class="piece">1</span>
+                                <span class="plus">></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/taylor-dG4Eb_oC5iM-unsplash.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <h4>White Printed T-Shirt</h4>
+                    </div>
+                    <div class="total-price">
+                        <p>Rs. 299/-</p>
+                    </div>
+                    <div class="quantity">
+                        <span class="minus">
+                            < </span>
+                                <span class="piece">1</span>
+                                <span class="plus">></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/taylor-dG4Eb_oC5iM-unsplash.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <h4>White Printed T-Shirt</h4>
+                    </div>
+                    <div class="total-price">
+                        <p>Rs. 299/-</p>
+                    </div>
+                    <div class="quantity">
+                        <span class="minus">
+                            < </span>
+                                <span class="piece">1</span>
+                                <span class="plus">></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/taylor-dG4Eb_oC5iM-unsplash.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <h4>White Printed T-Shirt</h4>
+                    </div>
+                    <div class="total-price">
+                        <p>Rs. 299/-</p>
+                    </div>
+                    <div class="quantity">
+                        <span class="minus">
+                            < </span>
+                                <span class="piece">1</span>
+                                <span class="plus">></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/taylor-dG4Eb_oC5iM-unsplash.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <h4>White Printed T-Shirt</h4>
+                    </div>
+                    <div class="total-price">
+                        <p>Rs. 299/-</p>
+                    </div>
+                    <div class="quantity">
+                        <span class="minus">
+                            < </span>
+                                <span class="piece">1</span>
+                                <span class="plus">></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/taylor-dG4Eb_oC5iM-unsplash.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <h4>White Printed T-Shirt</h4>
+                    </div>
+                    <div class="total-price">
+                        <p>Rs. 299/-</p>
+                    </div>
+                    <div class="quantity">
+                        <span class="minus">
+                            < </span>
+                                <span class="piece">1</span>
+                                <span class="plus">></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/taylor-dG4Eb_oC5iM-unsplash.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <h4>White Printed T-Shirt</h4>
+                    </div>
+                    <div class="total-price">
+                        <p>Rs. 299/-</p>
+                    </div>
+                    <div class="quantity">
+                        <span class="minus">
+                            < </span>
+                                <span class="piece">1</span>
+                                <span class="plus">></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="cart-btn">
+                <button class="total ">0</button>
+                <button class="place-order">Place Order</button>
+            </div>
+        </div>
+
+
+        <!-- -------- OFFER ---------  -->
+
+
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col band">
+                        <img src="./images/band-PhotoRoom.png-PhotoRoom.png" alt="">
+                    </div>
+                    <div class="col">
+                        <p>Exclusively Offer On Redstore</p>
+                        <h1>Smart Band 4</h1>
+                        <small>The Mi Band resembles a bracelet in its design, and can be worn on either hand. The
+                            band's
+                            location can be set using the official Mi Band app called Mi Fit, later replaced by Mi
+                            Health
+                            and subsequently renamed to Zepp Life. The band contains the core tracker which is around 9
+                            mm
+                            thick, and 36 mm in length.</small>
+                        <p>
+
+                            <a href="" class="btn">Buy Now &rarr; </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ------------- RATING AND REVIEWS -----------  -->
+
+        <div class="reviews">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="./images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="">
+                        <h3>Mike Peter</h3>
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consequatur alias debitis
+                            nesciunt quisquam! Aliquam.</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <img src="./images/matheus-ferrero-pg_WCHWSdT8-unsplash.jpg" alt="">
+                        <h3>Seam Parker</h3>
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consequatur alias debitis
+                            nesciunt quisquam! Aliquam.</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <img src="./images/abishek-fgMORtDH9S0-unsplash.jpg" alt="">
+                        <h3>Tont Stark</h3>
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consequatur alias debitis
+                            nesciunt quisquam! Aliquam.</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- --------- FOOTER -------------  -->
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="f-col1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for android and ios mobile phones.</p>
+
+                        <div class="app-logo">
+                            <img src="./images/google.png" alt="">
+                            <img src="./images/apple 3.png ">
+                        </div>
+                    </div>
+                    <div class="f-col2">
+                        <img src="./images/images.png" alt="">
+
+                    </div>
+                    <div class="f-col3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policies</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="f-col4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- -------------------- FORM SECTION -------------------  -->
+    <form id="form" style="display: none;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone No:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <button type="submit">Submit</button>
+    </form>
+s
+    <script src="main.js"></script>
+</body>
+
+</html>
