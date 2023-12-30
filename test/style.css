@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    transition: background-color 0.5s;
+}
+
+body.dark-mode {
+    background-color: #333; /* Dark mode background color */
+    color: #fff; /* Dark mode text color */
+}
+
+.dark-mode{
+    text-align:right ;
+    padding: 15px;
+}
+
+.container{
+    max-width: 100%;
+   
+    padding: 20px;
+    margin: 0px auto;
+}
+
+header{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    
+}
+p{
+    word-spacing: 2px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+}
+h2,h3,p{
+    margin: 15px 0px;
+    text-align: left;
+}
+
+img{
+   max-width: 500px;
+}
+
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
